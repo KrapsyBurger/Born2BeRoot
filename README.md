@@ -56,3 +56,5 @@ Exemple : si un logiciel se veut malveillant ou bien pour l'utilisateur d'accede
 - La commande awk = Cette commande permet d'appliquer certaines actions sur un fichier en fonction de differentes expressions entre les accolades.
 
 - La commande grep = Permet de faire des recherches de chaines de caracteres dans un flux de texte.
+
+- Partition de disque dur = Division virtuelle du disque dur. Cela permet d'accelerer l'acces aux donnees. Deux systemes d'exploitations ne peuvent pas cohabiter sur la meme partition. Ca peut aussi servir de roue de secours si le systemme d'exploitation tombe en panne, sseule la partition de l'os sera concernee.

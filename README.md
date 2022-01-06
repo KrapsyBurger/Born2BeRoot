@@ -40,7 +40,7 @@
 
 - Uncomplicated Firewall = Un programme informatique qui est un pare-feu simple d'utilisation.
 
-- Difference entre CentOS et Debian = Debian est open-source, alors que CentOS est dirige par une entreprise, et il est concu a un usage professionnel pour les entreprises, tandis que Debian est plus facile pour debuter, et pour installer des interfaces utilisateurs (par exemple zsh).
+- Difference entre CentOS et Debian = CentOs est open-source mais appartient a Linux. C'est destine aux entreprises. Debian est developpe a partir d'autres sources open-source. C'est developpe par des independant. CentOS est plus populaire que Debian. Debian a plus de packet que CentOS tandis que CentOS supporte moins d'architectures (organisation du systeme, les relations entre les elementss etc..). Ils sont en revanche tous les deux utilises.
 
 - Apparmor = C'est un logiciel de securite, qui permet d'appliquer des restrictions a des logiciels notamment (par exemple interdire a un logiciel d'acceder a un certain dossier sans pour autant modifier le fonctionnement de l'application).
 
@@ -56,4 +56,3 @@ Exemple : si un logiciel se veut malveillant ou bien pour l'utilisateur d'accede
 - La commande awk = Cette commande permet d'appliquer certaines actions sur un fichier en fonction de differentes expressions entre les accolades.
 
 - La commande grep = Permet de faire des recherches de chaines de caracteres dans un flux de texte.
-

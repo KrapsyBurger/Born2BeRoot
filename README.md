@@ -4,15 +4,15 @@
 
 - apt-get = installation de package
 - su - = passer en mode root 
-- su <username> = se connecter a un user
+- su "username" = se connecter a un user
 - compgen -u = afficher la liste des user
 - compgen -g = afficher la liste des groupes
 - getent group = afficher la liste des groupes, + user correspondants
 - userdel --remove = remove le user ET son dossier /home ET le groupe auxquel il appartient 
-- adduser <username> = add un user
-- getent passwd <username> = check si le user est bien cree
+- adduser "username" = add un user
+- getent passwd "username" = check si le user est bien cree
 - systemctl status ssh = check SSH status
-(depuis le terminal) - ssh <username>@<ip-address> -p 4242 = se connecter via une autre machine
+(depuis le terminal) - ssh "username"@"ip-address" -p 4242 = se connecter via une autre machine
 - sudo visudo = ouvrir la config sudo
 - sudo nano /etc/login.defs = config de passwd
 - sudo nano /etc/pam.d/common-password = exigences mot de passe
@@ -20,12 +20,12 @@
 - ss -tnulp = check les ports
 - sudo nano /etc/ssh/sshd_config
 - sudo ufw status numbered = check ufw status
-- sudo ufw delete <number> = delete la regle du nombre en question
+- sudo ufw delete "number" = delete la regle du nombre en question
 - sudo ufw allow (nbr du port) = ajouter une nouvelle regle pour un port 
 - hostnamectl = check current hostname
-- hostnamectl set-hostname <nouveau-nom> = set un nouveau nom de hostname + ne pas oublier de changer le fichier contenant les hosts en faisant un "sudo nano /etc/hosts"
+- hostnamectl set-hostname "nouveau-nom" = set un nouveau nom de hostname + ne pas oublier de changer le fichier contenant les hosts en faisant un "sudo nano /etc/hosts"
 - usermod -a -G examplgegroup exampleusername = ajouter un user dans un groupe specifique
-- groupadd <nomdugroupe> = creer un groupe
+- groupadd "nomdugroupe" = creer un groupe
 - fdisk -l = pour voir la partition du disk sur la vm
 - head -n 2 /etc/os-release = regarder la version de la vm
 

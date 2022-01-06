@@ -26,7 +26,7 @@
 - hostnamectl set-hostname "nouveau-nom" = set un nouveau nom de hostname + ne pas oublier de changer le fichier contenant les hosts en faisant un "sudo nano /etc/hosts"
 - usermod -a -G examplgegroup exampleusername = ajouter un user dans un groupe specifique
 - groupadd "nomdugroupe" = creer un groupe
-- fdisk -l = pour voir la partition du disk sur la vm
+- lsblk = pour voir la partition du disk sur la vm
 - head -n 2 /etc/os-release = regarder la version de la vm
 
 
@@ -42,13 +42,18 @@
 
 - Difference entre CentOS et Debian = Debian est open-source, alors que CentOS est dirige par une entreprise, et il est concu a un usage professionnel pour les entreprises, tandis que Debian est plus facile pour debuter, et pour installer des interfaces utilisateurs (par exemple zsh).
 
-- Difference entre AppArmor et SELinux = Ce sont tous les deux des logiciels de securite pour Linux. SELinux est plus dur a installer car extremement pousse (developpe par la NSA, par des cracks, pour des cracks), contrairement a AppArmor qui est plus facile a utiliser.
+- Apparmor = C'est un logiciel de securite, qui permet d'appliquer des restrictions a des logiciels notamment (par exemple interdire a un logiciel d'acceder a un certain dossier sans pour autant modifier le fonctionnement de l'application).
 
 - Pourquoi utiliser cette politique de mot de passe ? : Elle est extremement securisee, mais chiante pour l'utilisateur car il faut le changer souvent, sans pour autant qu'il ressemble a l'ancien
 
 - Sudo = Sudo veut dire "Super User DO", c'est une commande qui permet d'executer n'importe quelle autre commande sans restrictions. (en tant que root).
+Exemple : si un logiciel se veut malveillant ou bien pour l'utilisateur d'acceder a des dossiers dont il n'est pas autorise.
 
-- SSH = Secure Shell. C'est un protocole qui permet a des utilisateurs d'acceder de maniere securise a des networks pas securises (via des cles de chiffrement les fameuses cles ssh).
+- SSH = Secure Shell. C'est un protocole qui permet a des utilisateurs d'acceder de maniere securise a des networks pas securises (via des cles de chiffrement les fameuses cles ssh). Toutes les transactions de donnees sont cryptees.
 
+- La commande sed = Cette commande permet d'appliquer un certain nombre de commandes sur un fichier puis d'en afficher le resultat (sans modification du fichier de départ) sur la sortie standard.
 
+- La commande awk = Cette commande permet d'appliquer certaines actions sur un fichier en fonction de differentes expressions entre les accolades.
+
+- La commande grep = Permet de faire des recherches de chaines de caracteres dans un flux de texte.
 
